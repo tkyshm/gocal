@@ -82,8 +82,8 @@ func main() {
 			for index, e := range evts {
 				e.StartTime = *insertStart
 				e.EndTime = *insertEnd
-				e.StartTime = *insertStartDate
-				e.EndTime = *insertEndDate
+				e.StartDate = *insertStartDate
+				e.EndDate = *insertEndDate
 				evts[index] = e
 			}
 			gc.InsertEvents(evts)
